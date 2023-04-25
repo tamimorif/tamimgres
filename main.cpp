@@ -19,7 +19,7 @@ public:
     void saveColumnNames(std::vector<std::string> values) {
         std::ofstream file = getFile();
         std::string newRow;
-        for (auto &value: values) {
+        for (auto &value : values) {
             newRow += value + ",";
         }
         newRow += '\n';
@@ -35,7 +35,7 @@ public:
     void saveNewRow(std::vector<std::string> values) {
         auto file = getFile();
         std::string newRow;
-        for (auto &value: values) {
+        for (auto &value : values) {
             newRow += value + ",";
         }
         newRow += '\n';
@@ -46,13 +46,19 @@ public:
 
 class TamimDatabase {
 public:
-    Table createTable(std::string tableName, std::vector<std::string> columnNames) {
+    Table createTable(string tableName, vector<string> columnNames) {
         // TODO: Check if table exist, if yes, throw an error
         Table table(tableName, columnNames);
+        if (tableName == table.tableName) {
+            throw runtime_error("Table already exist");
+        }
         return table;
     }
 
     // dropTable
+    //    Table dropTable(string tableName){
+    //
+    //    }
 };
 
 //
@@ -62,7 +68,7 @@ int main() {
     // Print the vector elements
 
     Table studentTable = tdb.createTable("students", columns);
-    std::cout << "Created a table " << std::endl;
+    cout << "Created a table " << endl;
 
     // Save a new row of data in the table
     studentTable.saveNewRow({"1", "Tamim", "20", "1234"});
