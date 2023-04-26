@@ -3,4 +3,4 @@ project(tamimgres)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(tamimgres main.cpp)
+add_executable(tamimgres main.cpp extra/first.cpp)

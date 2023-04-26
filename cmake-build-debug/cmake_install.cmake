@@ -1,4 +1,4 @@
-# Install script for directory: /Users/admin/Desktop/tamimgres
+# Install script for directory: /Users/admin/Desktop/C++/tamimgres
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/admin/Desktop/tamimgres/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/admin/Desktop/C++/tamimgres/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
