@@ -74,18 +74,18 @@ public:
 
 int main() {
     TamimDatabase tdb;
-    // vector<string>columns{"id","name","age","phoneNumber"};
+    vector<string> columns{"id", "name", "age", "phoneNumber"};
+    Table studentTable = tdb.createTable("students", columns);
+    cout << "Created a table " << endl;
+    vector<string> values{"1", "Tamim", "20", "1234"};
+    studentTable.saveNewRow(values);
     // columns.push_back("id");
     // columns.push_back("name");
     // columns.push_back("age");
     // columns.push_back("phoneNumber");
-    // Table studentTable = tdb.createTable("students", columns);
-    // cout << "Created a table " << endl;
 
     // tdb.dropTable("students");
     // Save a new row of data in the table
-    // vector<string> values{"1","Tamim","20","1234"};
-    // studentTable.saveNewRow(values);
 
     // values.push_back("1");
     // values.push_back("Tamim");
