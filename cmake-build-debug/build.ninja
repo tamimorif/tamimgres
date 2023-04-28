@@ -57,6 +57,14 @@ build CMakeFiles/tamimgres.dir/main.cpp.o: CXX_COMPILER__tamimgres_Debug /Users/
   TARGET_COMPILE_PDB = CMakeFiles/tamimgres.dir/
   TARGET_PDB = tamimgres.pdb
 
+build CMakeFiles/tamimgres.dir/main1.cpp.o: CXX_COMPILER__tamimgres_Debug /Users/admin/Desktop/C++/tamimgres/main1.cpp || cmake_object_order_depends_target_tamimgres
+  DEP_FILE = CMakeFiles/tamimgres.dir/main1.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/tamimgres.dir
+  OBJECT_FILE_DIR = CMakeFiles/tamimgres.dir
+  TARGET_COMPILE_PDB = CMakeFiles/tamimgres.dir/
+  TARGET_PDB = tamimgres.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tamimgres
@@ -65,7 +73,7 @@ build CMakeFiles/tamimgres.dir/main.cpp.o: CXX_COMPILER__tamimgres_Debug /Users/
 #############################################
 # Link the executable tamimgres
 
-build tamimgres: CXX_EXECUTABLE_LINKER__tamimgres_Debug CMakeFiles/tamimgres.dir/main.cpp.o
+build tamimgres: CXX_EXECUTABLE_LINKER__tamimgres_Debug CMakeFiles/tamimgres.dir/main.cpp.o CMakeFiles/tamimgres.dir/main1.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/tamimgres.dir
   POST_BUILD = :
